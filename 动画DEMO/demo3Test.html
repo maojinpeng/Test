@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Hello Monday</title>
+    <link rel="icon" type="image/gif" href="./icon/favicon.png">
+    <script src="./js/jquery-3.1.1.js"></script>
+    <script src="./js/jquery.easing.1.3.js"></script>
+    <script src="http://cdn.bootcss.com/jQuery-slimScroll/1.3.1/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.fullPage.js"></script>
+    <script src="./js/jquery.color.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+    <link rel="stylesheet" href="./css/nomalize.css">
+</head>
+
+<body>
+    <!-- 蒙版 -->
+    <div id="mask">
+        <!-- 左侧信息栏 -->
+        <div class="left-info">
+
+            <!-- 商标 -->
+            <img src="./icon/hellomonday-logo@2.png" width="184" height="24" alt="" class="index-logo">
+            <!-- 网址 -->
+            <a class="index-address" href="" id='mail'>hello@hellomonday.com</a>
+        </div>
+        <!-- 右侧信息栏 -->
+        <div class='right-info'>
+            <div>
+                <!-- 问候语 -->
+                <div id="meetWords">What's­­­ up <span
+                        style="display: inline-block;width: 45px;height: 1px;background-color: white;vertical-align: middle"></span>
+                </div>
+                <!-- 版权 -->
+                <div id="copyright">© Copyright 2019</div>
+                <!-- 主要信息 -->
+                <div id="title">
+                    <div style="color: white;font-size: 18px;margin-bottom: 0px;">Case</div>
+                    <div id="t1" style="color: white;margin-top: 100px;">National Geographic</div>
+                    <div id="t2" style="color: rgb(255, 204, 0)">A Bear's-Eye View of Yellowstone</div>
+                    
+                    <div id="title-information" style="color: rgb(101, 91, 85);font-size: 14px;line-height: 18px;margin-top: 10px;">Follow
+                        the
+                        journeys of 4
+                        bears navigating
+                        the heart of Yellowstone, as seen
+                        from the bears’ own point of view. This groundbreaking research that attaches cameras to bears gives
+                        us a lens into the never before seen lives of one of the animal kingdom’s most fearsome beasts.
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- 更多图标 -->
+    <div id="more">
+        <img src="./icon/partMore.png" alt="" id="trans1" class="rotatePic">
+        <img src="./icon/partMore.png" alt="" id="trans2" class="rotatePic">
+        <img src="./icon/partMore.png" alt="" id="trans3" class="rotatePic">
+    </div>
+
+    <!-- 详情界面动画 -->
+    <div id="seeMore">
+        <div>
+            <div id="SM1"
+                style="width: 14px;height: 1px;background-color: black;transform: rotate(35deg);transition: all 0.5s">
+            </div>
+            <div id="SM2"
+                style="width: 14px;height: 1px;background-color: black;margin-top:8px;transform: rotate(-35deg);transition: all 0.5s">
+            </div>
+        </div>
+    </div>
+    <!-- 上一页 -->
+    <div id="prePage">
+        <div>
+            <div id="PP1" style="width: 14px;height: 1px;background-color: black;transform: rotate(-35deg);transition: all 0.5s"></div>
+            <div id='PP2' style="width: 14px;height: 1px;background-color: black;transform: rotate(35deg);margin-left:12px;transition: all 0.5s"></div>
+        </div>
+    </div>
+    <!-- 下一页 -->
+    <div id="nextPage">
+        <div>
+            <div id="NP1"
+                style="width: 14px;height: 1px;background-color: black;transform: rotate(35deg);transition: all 0.5s"></div>
+            <div id='NP2'
+                style="width: 14px;height: 1px;background-color: black;transform: rotate(-35deg);margin-left:11px;transition: all 0.5s">
+            </div>
+        </div>
+    </div>
+
+    <div id="dowebok">
+
+        <!-- p1 -->
+        <div class="section fp-noscroll" id="c1">
+            <!-- 负一屏 -->
+            <div class="slide" id="onlyone">
+                <!-- 背景 -->
+                <div id="nav-background">
+                    <!-- 第一个盒子 -->
+                    <div id="nav-left">
+                        <img src="./icon/hellomonday-logo@2.png" width="184" height="24" alt="" id="nav-logo">
+                        <a id="nav-address" href="">hello@hellomonday.com</a>
+                    </div>
+                    <!-- 第二个盒子 -->
+                    <div id="nav-right">
+                        <!-- 导航语 -->
+                        <div id="nav-nav">Navigation <span style="display: inline-block;width: 45px;height: 1px;background-color: rgb(185, 191,
+                                187);vertical-align: middle"></span>
+                        </div>
+                        <!-- 导航部分 -->
+                        <ul id="nav-ul">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Awards</a></li>
+                            <li><a href="#">People</a></li>
+                            <li id="nav-special-li"><a href="#">Stories</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide active" id="viewBox1" >
+                <img src="./Home/bear/HM_Landing_page_nat-geo_layer1.jpg" alt="" id='img1' class="specialPic">
+                <img src="./Home/bear/HM_Landing_page_nat-geo_layer2.png" alt="" id='img2' class="specialPic">
+                <img src="./Home/bear/HM_Landing_page_nat-geo_layer3.png" alt="" id='img3' class="specialPic">
+
+
+
+            </div>
+            <div class="slide" id="slideP1">
+                <div id="P1content">
+                    <div id="P1return">
+                       <div>
+                            <div id="SP1" style="width: 14px;height: 1px;background-color: black;transform: rotate(-35deg);transition: all 0.5s">
+                            </div>
+                            <div id="SP2"
+                                style="width: 14px;height: 1px;background-color: black;margin-top:8px;transform: rotate(35deg);transition: all 0.5s">
+                            </div>
+                       </div>
+                    </div>
+                    <div style="padding: 40px;display: flex;flex-direction: row;">
+                        <div style="display: flex;flex-direction: column;margin-top: 60px;">
+                            <span style="color: white;font-size:14px;font-weight: 900 ">Client</span>
+                            <span style="color: white;font-size: 14px;color:rgb(72, 63, 57);font-weight: 800">National Geographic</span>
+                        </div>
+                        <div style="margin-left: 100px;">
+                            <div style="display: flex;flex-direction: column;">
+                                <span style="color: aliceblue;font-size: 14px;font-weight: 700">Case -------</span>
+                                <span style="color: aliceblue;margin-top: 60px;font-size: 30px;font-weight: 900">National Geographic</span>
+                                <span style="color: aliceblue;font-size: 30px;font-weight: 900;color:rgb(232, 185, 2) ">A Bear's-Eye View of Yellowstone</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="font-size:33px;color:rgb(72, 63, 57);width: 1000px;padding: 40px">
+                        Follow the journeys of 4 bears navigating the heart of Yellowstone, as seen from the bears’ own point of view. This
+                        groundbreaking research that attaches cameras to bears gives us a lens into the never before seen lives of one of the
+                        animal kingdom’s most fearsome beasts.
+                    </div>
+                    <div style="display: flex;flex-direction: row;padding: 40px;justify-content: space-between">
+                        <div style="display: flex;flex-direction: column">
+                            <h4 style="color: white">The story</h4>
+                            <span style="display: inline-block;width:350px;color: white;font-size: 14px;">Ever wonder what it would be like to be a bear living in the wild – foraging to bulk up for the winter months, shaking
+                            off after a dip in a cool stream, hunting and being hunted, being spied on by curious tourists, and seeing some of the
+                            best views not accessible by humans? For the first time ever, National Geographic has those answers.</span>
+                            <span style="display: inline-block;width:350px;color: white;font-size: 14px;margin-top: 20px;">Following two grizzlies and two black bears equipped with special camera collars in Yellowstone National Park,
+                            researchers and Nat Geo readers are getting an unprecedented view into the life of a bear – from the bear’s eye-view. We
+                            see the remarkable journeys of these 4 bears as they cover great distances, encounter predators, their own kind, and
+                            even people. We discover what they eat and how they use the beautiful and expansive landscape of Yellowstone.
+                            </span>
+                        </div>
+                        <div style="width:350px;color: white;font-size: 14px;margin-top: 20px;">Working with National Geographic’s team of editors, journalists, producers, and researchers, we’ve gathered this
+                        incredible footage into an engaging online narrative focused on the distinct paths that each bear roamed. Utilizing the
+                        geo-coordinate data captured with every 20-seconds of footage, we’re able to pinpoint the bears to the exact geography
+                        of Yellowstone. Combined with expert analysis from researchers Kerry Gunther and Nate Bowers, delivered as intermittent
+                        audio captions, we gain a deeper understanding of the bears’ activity as uncovered by the POV footage and their unique
+                        characteristics. And, of course, Hello Monday couldn’t resist adding the extra hand-touch with watercolor illustrations
+                        and pencil-drawn portraits depicting the beautiful, mysterious life of each bear.</div>
+                        <div style="margin-top: 20px;color:white">
+                            <h4>Project</h4>
+                            <span style="display:inline-block;width: 300px;font-size: 14px;padding-bottom: 20px;border-bottom: 1px solid #ccc;margin-bottom: 10px">Digital feature for Nat Geo's May 2016 issue</span>
+                            <h4>Deliverables</h4>
+                            <span style="display:inline-block;width: 300px;font-size: 14px;padding-bottom: 20px;border-bottom: 1px solid #ccc;margin-bottom: 10px">Concept, Design, UX Design, Development, Illustration & Video Editing</span>
+                            <h4>Awards</h4>
+                            <span style="display:inline-block;width: 300px;font-size: 14px;padding-bottom: 20px;border-bottom: 1px solid #ccc;margin-bottom: 10px">Awwwards SOTD
+                            Awwwards SOTM
+                            FWA FOTD</span>
+                        </div>
+                        
+                    </div>
+                    <div style="padding: 40px;color:white">
+                        <div style="font-size: 14px;font-weight: 900;">Visit site</div>
+                        <div style="font-size: 14px;color:rgb(231, 184, 1);font-weight: 900">www.nationalgeographic.com/yellowstone-bears</div>
+                    </div>
+                    <img src="./Home/bear/detail/image-1.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-2.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-3.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-4.gif" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-5.gif" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-6.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-7.gif" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-8.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-9.jpg" alt="" style="width: 100%">
+                    <video src="./Home/bear//detail/nat-geo.mp4" style="width: 100%" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0"></video>
+                    <img src="./Home/bear/detail/image-10.jpg" alt="" style="width: 100%">
+                </div>
+            </div>
+        </div>
+        <!-- p2 -->
+        <div class="section fp-noscroll" id="c2">
+
+            <!-- 负一屏 -->
+            <div class="slide" id="onlyone">
+                <!-- 背景 -->
+                <div id="nav-background" style="width: 1338px; height: 757px; margin: 20px;">
+                    <!-- 第一个盒子 -->
+                    <div id="nav-left">
+                        <img src="./icon/hellomonday-logo@2.png" width="184" height="24" alt="" id="nav-logo">
+                        <a id="nav-address" href="">hello@hellomonday.com</a>
+                    </div>
+                    <!-- 第二个盒子 -->
+                    <div id="nav-right">
+                        <!-- 导航语 -->
+                        <div id="nav-nav">Navigation <span style="display: inline-block;width: 45px;height: 1px;background-color: rgb(185, 191,
+                                187);vertical-align: middle"></span>
+                        </div>
+                        <!-- 导航部分 -->
+                        <ul id="nav-ul">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Awards</a></li>
+                            <li><a href="#">People</a></li>
+                            <li id="nav-special-li"><a href="#">Stories</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="viewBox2" class="slide active fp-noscroll">
+                <img src="./Home/tree/HM_Landing_page_hollow_layer1.jpg" class="specialPic" id='img4'>
+                <img src="./Home/tree/HM_Landing_page_hollow_layer2.png" class="specialPic" id='img5'>
+                <img src="./Home/tree/HM_Landing_page_hollow_layer3.png" class="specialPic" id='img6'>
+            </div>
+            <div class="slide">
+                <div id="P1content">
+                    <div id="P2return">
+                        <div>
+                            <div id="SP12"
+                                style="width: 14px;height: 1px;background-color: black;transform: rotate(-35deg);transition: all 0.5s">
+                            </div>
+                            <div id="SP22"
+                                style="width: 14px;height: 1px;background-color: black;margin-top:8px;transform: rotate(35deg);transition: all 0.5s">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding: 40px;display: flex;flex-direction: row;">
+                        <div style="display: flex;flex-direction: column;margin-top: 60px;">
+                            <span style="color: white;font-size:14px;font-weight: 900 ">Client</span>
+                            <span style="color: white;font-size: 14px;color:rgb(72, 63, 57);font-weight: 800">National Geographic</span>
+                        </div>
+                        <div style="margin-left: 100px;">
+                            <div style="display: flex;flex-direction: column;">
+                                <span style="color: aliceblue;font-size: 14px;font-weight: 700">Case -------</span>
+                                <span style="color: aliceblue;margin-top: 60px;font-size: 30px;font-weight: 900">National
+                                    Geographic</span>
+                                <span style="color: aliceblue;font-size: 30px;font-weight: 900;color:rgb(232, 185, 2) ">A Bear's-Eye
+                                    View of Yellowstone</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="font-size:33px;color:rgb(72, 63, 57);width: 1000px;padding: 40px">
+                        Follow the journeys of 4 bears navigating the heart of Yellowstone, as seen from the bears’ own point of view.
+                        This
+                        groundbreaking research that attaches cameras to bears gives us a lens into the never before seen lives of one
+                        of the
+                        animal kingdom’s most fearsome beasts.
+                    </div>
+                    <div style="display: flex;flex-direction: row;padding: 40px;justify-content: space-between">
+                        <div style="display: flex;flex-direction: column">
+                            <h4 style="color: white">The story</h4>
+                            <span style="display: inline-block;width:350px;color: white;font-size: 14px;">Ever wonder what it would be
+                                like to be a bear living in the wild – foraging to bulk up for the winter months, shaking
+                                off after a dip in a cool stream, hunting and being hunted, being spied on by curious tourists, and
+                                seeing some of the
+                                best views not accessible by humans? For the first time ever, National Geographic has those
+                                answers.</span>
+                            <span style="display: inline-block;width:350px;color: white;font-size: 14px;margin-top: 20px;">Following two
+                                grizzlies and two black bears equipped with special camera collars in Yellowstone National Park,
+                                researchers and Nat Geo readers are getting an unprecedented view into the life of a bear – from the
+                                bear’s eye-view. We
+                                see the remarkable journeys of these 4 bears as they cover great distances, encounter predators, their
+                                own kind, and
+                                even people. We discover what they eat and how they use the beautiful and expansive landscape of
+                                Yellowstone.
+                            </span>
+                        </div>
+                        <div style="width:350px;color: white;font-size: 14px;margin-top: 20px;">Working with National Geographic’s team
+                            of editors, journalists, producers, and researchers, we’ve gathered this
+                            incredible footage into an engaging online narrative focused on the distinct paths that each bear roamed.
+                            Utilizing the
+                            geo-coordinate data captured with every 20-seconds of footage, we’re able to pinpoint the bears to the exact
+                            geography
+                            of Yellowstone. Combined with expert analysis from researchers Kerry Gunther and Nate Bowers, delivered as
+                            intermittent
+                            audio captions, we gain a deeper understanding of the bears’ activity as uncovered by the POV footage and
+                            their unique
+                            characteristics. And, of course, Hello Monday couldn’t resist adding the extra hand-touch with watercolor
+                            illustrations
+                            and pencil-drawn portraits depicting the beautiful, mysterious life of each bear.</div>
+                        <div style="margin-top: 20px;color:white">
+                            <h4>Project</h4>
+                            <span
+                                style="display:inline-block;width: 300px;font-size: 14px;padding-bottom: 20px;border-bottom: 1px solid #ccc;margin-bottom: 10px">Digital
+                                feature for Nat Geo's May 2016 issue</span>
+                            <h4>Deliverables</h4>
+                            <span
+                                style="display:inline-block;width: 300px;font-size: 14px;padding-bottom: 20px;border-bottom: 1px solid #ccc;margin-bottom: 10px">Concept,
+                                Design, UX Design, Development, Illustration & Video Editing</span>
+                            <h4>Awards</h4>
+                            <span
+                                style="display:inline-block;width: 300px;font-size: 14px;padding-bottom: 20px;border-bottom: 1px solid #ccc;margin-bottom: 10px">Awwwards
+                                SOTD
+                                Awwwards SOTM
+                                FWA FOTD</span>
+                        </div>
+                
+                    </div>
+                    <div style="padding: 40px;color:white">
+                        <div style="font-size: 14px;font-weight: 900;">Visit site</div>
+                        <div style="font-size: 14px;color:rgb(231, 184, 1);font-weight: 900">
+                            www.nationalgeographic.com/yellowstone-bears</div>
+                    </div>
+                    <img src="./Home/bear/detail/image-1.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-2.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-3.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-4.gif" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-5.gif" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-6.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-7.gif" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-8.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-9.jpg" alt="" style="width: 100%">
+                    <video src="./Home/bear//detail/nat-geo.mp4" style="width: 100%" preload="auto" autoplay="true" loop="loop"
+                        muted="muted" volume="0"></video>
+                    <img src="./Home/bear/detail/image-10.jpg" alt="" style="width: 100%">
+                </div>
+            </div>
+
+        </div>
+        <!-- p3 -->
+        <div class="section" id="c3">
+            <!-- 负一屏 -->
+            <div class="slide" id="onlyone">
+                <!-- 背景 -->
+                <div id="nav-background" style="width: 1338px; height: 757px; margin: 20px;">
+                    <!-- 第一个盒子 -->
+                    <div id="nav-left">
+                        <img src="./icon/hellomonday-logo@2.png" width="184" height="24" alt="" id="nav-logo">
+                        <a id="nav-address" href="">hello@hellomonday.com</a>
+                    </div>
+                    <!-- 第二个盒子 -->
+                    <div id="nav-right">
+                        <!-- 导航语 -->
+                        <div id="nav-nav">Navigation <span style="display: inline-block;width: 45px;height: 1px;background-color: rgb(185, 191,
+                                187);vertical-align: middle"></span>
+                        </div>
+                        <!-- 导航部分 -->
+                        <ul id="nav-ul">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Awards</a></li>
+                            <li><a href="#">People</a></li>
+                            <li id="nav-special-li"><a href="#">Stories</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="viewBox3" class="slide active">
+                <img src="./Home/youtube/yt-kid-01.jpg" class="specialPic" id='img7'>
+                <img src="./Home/youtube/yt-kid-02.png" class="specialPic" id='img8'>
+                <img src="./Home/youtube/yt-kid-03.png" class="specialPic" id='img9'>
+            </div>
+            <div class="slide">
+                <div id="P1content">
+                    <div id="P3return">
+                        <div>
+                            <div id="SP13"
+                                style="width: 14px;height: 1px;background-color: black;transform: rotate(-35deg);transition: all 0.5s">
+                            </div>
+                            <div id="SP23"
+                                style="width: 14px;height: 1px;background-color: black;margin-top:8px;transform: rotate(35deg);transition: all 0.5s">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding: 40px;display: flex;flex-direction: row;">
+                        <div style="display: flex;flex-direction: column;margin-top: 60px;">
+                            <span style="color: white;font-size:14px;font-weight: 900 ">Client</span>
+                            <span style="color: white;font-size: 14px;color:rgb(72, 63, 57);font-weight: 800">National Geographic</span>
+                        </div>
+                        <div style="margin-left: 100px;">
+                            <div style="display: flex;flex-direction: column;">
+                                <span style="color: aliceblue;font-size: 14px;font-weight: 700">Case -------</span>
+                                <span style="color: aliceblue;margin-top: 60px;font-size: 30px;font-weight: 900">National
+                                    Geographic</span>
+                                <span style="color: aliceblue;font-size: 30px;font-weight: 900;color:rgb(232, 185, 2) ">A Bear's-Eye
+                                    View of Yellowstone</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="font-size:33px;color:rgb(72, 63, 57);width: 1000px;padding: 40px">
+                        Follow the journeys of 4 bears navigating the heart of Yellowstone, as seen from the bears’ own point of view.
+                        This
+                        groundbreaking research that attaches cameras to bears gives us a lens into the never before seen lives of one
+                        of the
+                        animal kingdom’s most fearsome beasts.
+                    </div>
+                    <div style="display: flex;flex-direction: row;padding: 40px;justify-content: space-between">
+                        <div style="display: flex;flex-direction: column">
+                            <h4 style="color: white">The story</h4>
+                            <span style="display: inline-block;width:350px;color: white;font-size: 14px;">Ever wonder what it would be
+                                like to be a bear living in the wild – foraging to bulk up for the winter months, shaking
+                                off after a dip in a cool stream, hunting and being hunted, being spied on by curious tourists, and
+                                seeing some of the
+                                best views not accessible by humans? For the first time ever, National Geographic has those
+                                answers.</span>
+                            <span style="display: inline-block;width:350px;color: white;font-size: 14px;margin-top: 20px;">Following two
+                                grizzlies and two black bears equipped with special camera collars in Yellowstone National Park,
+                                researchers and Nat Geo readers are getting an unprecedented view into the life of a bear – from the
+                                bear’s eye-view. We
+                                see the remarkable journeys of these 4 bears as they cover great distances, encounter predators, their
+                                own kind, and
+                                even people. We discover what they eat and how they use the beautiful and expansive landscape of
+                                Yellowstone.
+                            </span>
+                        </div>
+                        <div style="width:350px;color: white;font-size: 14px;margin-top: 20px;">Working with National Geographic’s team
+                            of editors, journalists, producers, and researchers, we’ve gathered this
+                            incredible footage into an engaging online narrative focused on the distinct paths that each bear roamed.
+                            Utilizing the
+                            geo-coordinate data captured with every 20-seconds of footage, we’re able to pinpoint the bears to the exact
+                            geography
+                            of Yellowstone. Combined with expert analysis from researchers Kerry Gunther and Nate Bowers, delivered as
+                            intermittent
+                            audio captions, we gain a deeper understanding of the bears’ activity as uncovered by the POV footage and
+                            their unique
+                            characteristics. And, of course, Hello Monday couldn’t resist adding the extra hand-touch with watercolor
+                            illustrations
+                            and pencil-drawn portraits depicting the beautiful, mysterious life of each bear.</div>
+                        <div style="margin-top: 20px;color:white">
+                            <h4>Project</h4>
+                            <span
+                                style="display:inline-block;width: 300px;font-size: 14px;padding-bottom: 20px;border-bottom: 1px solid #ccc;margin-bottom: 10px">Digital
+                                feature for Nat Geo's May 2016 issue</span>
+                            <h4>Deliverables</h4>
+                            <span
+                                style="display:inline-block;width: 300px;font-size: 14px;padding-bottom: 20px;border-bottom: 1px solid #ccc;margin-bottom: 10px">Concept,
+                                Design, UX Design, Development, Illustration & Video Editing</span>
+                            <h4>Awards</h4>
+                            <span
+                                style="display:inline-block;width: 300px;font-size: 14px;padding-bottom: 20px;border-bottom: 1px solid #ccc;margin-bottom: 10px">Awwwards
+                                SOTD
+                                Awwwards SOTM
+                                FWA FOTD</span>
+                        </div>
+                
+                    </div>
+                    <div style="padding: 40px;color:white">
+                        <div style="font-size: 14px;font-weight: 900;">Visit site</div>
+                        <div style="font-size: 14px;color:rgb(231, 184, 1);font-weight: 900">
+                            www.nationalgeographic.com/yellowstone-bears</div>
+                    </div>
+                    <img src="./Home/bear/detail/image-1.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-2.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-3.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-4.gif" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-5.gif" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-6.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-7.gif" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-8.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-9.jpg" alt="" style="width: 100%">
+                    <video src="./Home/bear//detail/nat-geo.mp4" style="width: 100%" preload="auto" autoplay="true" loop="loop"
+                        muted="muted" volume="0"></video>
+                    <img src="./Home/bear/detail/image-10.jpg" alt="" style="width: 100%">
+                </div>
+            </div>
+        </div>
+        <!-- p4 -->
+        <div class="section" id="c4">
+            <!-- 负一屏 -->
+            <div class="slide" id="onlyone">
+                <!-- 背景 -->
+                <div id="nav-background" style="width: 1338px; height: 757px; margin: 20px;">
+                    <!-- 第一个盒子 -->
+                    <div id="nav-left">
+                        <img src="./icon/hellomonday-logo@2.png" width="184" height="24" alt="" id="nav-logo">
+                        <a id="nav-address" href="">hello@hellomonday.com</a>
+                    </div>
+                    <!-- 第二个盒子 -->
+                    <div id="nav-right">
+                        <!-- 导航语 -->
+                        <div id="nav-nav">Navigation <span style="display: inline-block;width: 45px;height: 1px;background-color: rgb(185, 191,
+                                187);vertical-align: middle"></span>
+                        </div>
+                        <!-- 导航部分 -->
+                        <ul id="nav-ul">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Awards</a></li>
+                            <li><a href="#">People</a></li>
+                            <li id="nav-special-li"><a href="#">Stories</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="viewBox4" class="slide active">
+                <img src="./Home/google(1)/HM_gcp_02.png" class="specialPic" id='img10'>
+                <img src="./Home/google(1)/HM_gcp_03.png" class="specialPic" id='img11'>
+                <img src="./Home/google(1)/HM_gcp_04.png" class="specialPic" id='img12'>
+            </div>
+            <div class="slide">
+                <div id="P1content">
+                    <div id="P4return">
+                        <div>
+                            <div id="SP14"
+                                style="width: 14px;height: 1px;background-color: black;transform: rotate(-35deg);transition: all 0.5s">
+                            </div>
+                            <div id="SP24"
+                                style="width: 14px;height: 1px;background-color: black;margin-top:8px;transform: rotate(35deg);transition: all 0.5s">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding: 40px;display: flex;flex-direction: row;">
+                        <div style="display: flex;flex-direction: column;margin-top: 60px;">
+                            <span style="color: white;font-size:14px;font-weight: 900 ">Client</span>
+                            <span style="color: white;font-size: 14px;color:rgb(72, 63, 57);font-weight: 800">National Geographic</span>
+                        </div>
+                        <div style="margin-left: 100px;">
+                            <div style="display: flex;flex-direction: column;">
+                                <span style="color: aliceblue;font-size: 14px;font-weight: 700">Case -------</span>
+                                <span style="color: aliceblue;margin-top: 60px;font-size: 30px;font-weight: 900">National
+                                    Geographic</span>
+                                <span style="color: aliceblue;font-size: 30px;font-weight: 900;color:rgb(232, 185, 2) ">A Bear's-Eye
+                                    View of Yellowstone</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="font-size:33px;color:rgb(72, 63, 57);width: 1000px;padding: 40px">
+                        Follow the journeys of 4 bears navigating the heart of Yellowstone, as seen from the bears’ own point of view.
+                        This
+                        groundbreaking research that attaches cameras to bears gives us a lens into the never before seen lives of one
+                        of the
+                        animal kingdom’s most fearsome beasts.
+                    </div>
+                    <div style="display: flex;flex-direction: row;padding: 40px;justify-content: space-between">
+                        <div style="display: flex;flex-direction: column">
+                            <h4 style="color: white">The story</h4>
+                            <span style="display: inline-block;width:350px;color: white;font-size: 14px;">Ever wonder what it would be
+                                like to be a bear living in the wild – foraging to bulk up for the winter months, shaking
+                                off after a dip in a cool stream, hunting and being hunted, being spied on by curious tourists, and
+                                seeing some of the
+                                best views not accessible by humans? For the first time ever, National Geographic has those
+                                answers.</span>
+                            <span style="display: inline-block;width:350px;color: white;font-size: 14px;margin-top: 20px;">Following two
+                                grizzlies and two black bears equipped with special camera collars in Yellowstone National Park,
+                                researchers and Nat Geo readers are getting an unprecedented view into the life of a bear – from the
+                                bear’s eye-view. We
+                                see the remarkable journeys of these 4 bears as they cover great distances, encounter predators, their
+                                own kind, and
+                                even people. We discover what they eat and how they use the beautiful and expansive landscape of
+                                Yellowstone.
+                            </span>
+                        </div>
+                        <div style="width:350px;color: white;font-size: 14px;margin-top: 20px;">Working with National Geographic’s team
+                            of editors, journalists, producers, and researchers, we’ve gathered this
+                            incredible footage into an engaging online narrative focused on the distinct paths that each bear roamed.
+                            Utilizing the
+                            geo-coordinate data captured with every 20-seconds of footage, we’re able to pinpoint the bears to the exact
+                            geography
+                            of Yellowstone. Combined with expert analysis from researchers Kerry Gunther and Nate Bowers, delivered as
+                            intermittent
+                            audio captions, we gain a deeper understanding of the bears’ activity as uncovered by the POV footage and
+                            their unique
+                            characteristics. And, of course, Hello Monday couldn’t resist adding the extra hand-touch with watercolor
+                            illustrations
+                            and pencil-drawn portraits depicting the beautiful, mysterious life of each bear.</div>
+                        <div style="margin-top: 20px;color:white">
+                            <h4>Project</h4>
+                            <span
+                                style="display:inline-block;width: 300px;font-size: 14px;padding-bottom: 20px;border-bottom: 1px solid #ccc;margin-bottom: 10px">Digital
+                                feature for Nat Geo's May 2016 issue</span>
+                            <h4>Deliverables</h4>
+                            <span
+                                style="display:inline-block;width: 300px;font-size: 14px;padding-bottom: 20px;border-bottom: 1px solid #ccc;margin-bottom: 10px">Concept,
+                                Design, UX Design, Development, Illustration & Video Editing</span>
+                            <h4>Awards</h4>
+                            <span
+                                style="display:inline-block;width: 300px;font-size: 14px;padding-bottom: 20px;border-bottom: 1px solid #ccc;margin-bottom: 10px">Awwwards
+                                SOTD
+                                Awwwards SOTM
+                                FWA FOTD</span>
+                        </div>
+                
+                    </div>
+                    <div style="padding: 40px;color:white">
+                        <div style="font-size: 14px;font-weight: 900;">Visit site</div>
+                        <div style="font-size: 14px;color:rgb(231, 184, 1);font-weight: 900">
+                            www.nationalgeographic.com/yellowstone-bears</div>
+                    </div>
+                    <img src="./Home/bear/detail/image-1.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-2.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-3.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-4.gif" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-5.gif" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-6.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-7.gif" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-8.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-9.jpg" alt="" style="width: 100%">
+                    <video src="./Home/bear//detail/nat-geo.mp4" style="width: 100%" preload="auto" autoplay="true" loop="loop"
+                        muted="muted" volume="0"></video>
+                    <img src="./Home/bear/detail/image-10.jpg" alt="" style="width: 100%">
+                </div>
+            </div>
+        </div>
+        <!-- p5 -->
+        <div class="section" id="c5">
+            <!-- 负一屏 -->
+            <div class="slide" id="onlyone">
+                <!-- 背景 -->
+                <div id="nav-background" style="width: 1338px; height: 757px; margin: 20px;">
+                    <!-- 第一个盒子 -->
+                    <div id="nav-left">
+                        <img src="./icon/hellomonday-logo@2.png" width="184" height="24" alt="" id="nav-logo">
+                        <a id="nav-address" href="">hello@hellomonday.com</a>
+                    </div>
+                    <!-- 第二个盒子 -->
+                    <div id="nav-right">
+                        <!-- 导航语 -->
+                        <div id="nav-nav">Navigation <span style="display: inline-block;width: 45px;height: 1px;background-color: rgb(185, 191,
+                                187);vertical-align: middle"></span>
+                        </div>
+                        <!-- 导航部分 -->
+                        <ul id="nav-ul">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Awards</a></li>
+                            <li><a href="#">People</a></li>
+                            <li id="nav-special-li"><a href="#">Stories</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="viewBox5" class="slide active">
+                <img src="./Home/phone/HM_Landing_page_essential_layer1.jpg" class="specialPic" id='img13'>
+                <img src="./Home/phone/HM_Landing_page_essential_layer2.png" class="specialPic" id='img14'>
+                <img src="./Home/phone/HM_Landing_page_essential_layer3.png" class="specialPic" id='img15'>
+            </div>
+            <div class="slide">
+                <div id="P1content">
+                    <div id="P5return">
+                        <div>
+                            <div id="SP15"
+                                style="width: 14px;height: 1px;background-color: black;transform: rotate(-35deg);transition: all 0.5s">
+                            </div>
+                            <div id="SP25"
+                                style="width: 14px;height: 1px;background-color: black;margin-top:8px;transform: rotate(35deg);transition: all 0.5s">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding: 40px;display: flex;flex-direction: row;">
+                        <div style="display: flex;flex-direction: column;margin-top: 60px;">
+                            <span style="color: white;font-size:14px;font-weight: 900 ">Client</span>
+                            <span style="color: white;font-size: 14px;color:rgb(72, 63, 57);font-weight: 800">National Geographic</span>
+                        </div>
+                        <div style="margin-left: 100px;">
+                            <div style="display: flex;flex-direction: column;">
+                                <span style="color: aliceblue;font-size: 14px;font-weight: 700">Case -------</span>
+                                <span style="color: aliceblue;margin-top: 60px;font-size: 30px;font-weight: 900">National
+                                    Geographic</span>
+                                <span style="color: aliceblue;font-size: 30px;font-weight: 900;color:rgb(232, 185, 2) ">A Bear's-Eye
+                                    View of Yellowstone</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="font-size:33px;color:rgb(72, 63, 57);width: 1000px;padding: 40px">
+                        Follow the journeys of 4 bears navigating the heart of Yellowstone, as seen from the bears’ own point of view.
+                        This
+                        groundbreaking research that attaches cameras to bears gives us a lens into the never before seen lives of one
+                        of the
+                        animal kingdom’s most fearsome beasts.
+                    </div>
+                    <div style="display: flex;flex-direction: row;padding: 40px;justify-content: space-between">
+                        <div style="display: flex;flex-direction: column">
+                            <h4 style="color: white">The story</h4>
+                            <span style="display: inline-block;width:350px;color: white;font-size: 14px;">Ever wonder what it would be
+                                like to be a bear living in the wild – foraging to bulk up for the winter months, shaking
+                                off after a dip in a cool stream, hunting and being hunted, being spied on by curious tourists, and
+                                seeing some of the
+                                best views not accessible by humans? For the first time ever, National Geographic has those
+                                answers.</span>
+                            <span style="display: inline-block;width:350px;color: white;font-size: 14px;margin-top: 20px;">Following two
+                                grizzlies and two black bears equipped with special camera collars in Yellowstone National Park,
+                                researchers and Nat Geo readers are getting an unprecedented view into the life of a bear – from the
+                                bear’s eye-view. We
+                                see the remarkable journeys of these 4 bears as they cover great distances, encounter predators, their
+                                own kind, and
+                                even people. We discover what they eat and how they use the beautiful and expansive landscape of
+                                Yellowstone.
+                            </span>
+                        </div>
+                        <div style="width:350px;color: white;font-size: 14px;margin-top: 20px;">Working with National Geographic’s team
+                            of editors, journalists, producers, and researchers, we’ve gathered this
+                            incredible footage into an engaging online narrative focused on the distinct paths that each bear roamed.
+                            Utilizing the
+                            geo-coordinate data captured with every 20-seconds of footage, we’re able to pinpoint the bears to the exact
+                            geography
+                            of Yellowstone. Combined with expert analysis from researchers Kerry Gunther and Nate Bowers, delivered as
+                            intermittent
+                            audio captions, we gain a deeper understanding of the bears’ activity as uncovered by the POV footage and
+                            their unique
+                            characteristics. And, of course, Hello Monday couldn’t resist adding the extra hand-touch with watercolor
+                            illustrations
+                            and pencil-drawn portraits depicting the beautiful, mysterious life of each bear.</div>
+                        <div style="margin-top: 20px;color:white">
+                            <h4>Project</h4>
+                            <span
+                                style="display:inline-block;width: 300px;font-size: 14px;padding-bottom: 20px;border-bottom: 1px solid #ccc;margin-bottom: 10px">Digital
+                                feature for Nat Geo's May 2016 issue</span>
+                            <h4>Deliverables</h4>
+                            <span
+                                style="display:inline-block;width: 300px;font-size: 14px;padding-bottom: 20px;border-bottom: 1px solid #ccc;margin-bottom: 10px">Concept,
+                                Design, UX Design, Development, Illustration & Video Editing</span>
+                            <h4>Awards</h4>
+                            <span
+                                style="display:inline-block;width: 300px;font-size: 14px;padding-bottom: 20px;border-bottom: 1px solid #ccc;margin-bottom: 10px">Awwwards
+                                SOTD
+                                Awwwards SOTM
+                                FWA FOTD</span>
+                        </div>
+                
+                    </div>
+                    <div style="padding: 40px;color:white">
+                        <div style="font-size: 14px;font-weight: 900;">Visit site</div>
+                        <div style="font-size: 14px;color:rgb(231, 184, 1);font-weight: 900">
+                            www.nationalgeographic.com/yellowstone-bears</div>
+                    </div>
+                    <img src="./Home/bear/detail/image-1.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-2.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-3.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-4.gif" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-5.gif" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-6.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-7.gif" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-8.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-9.jpg" alt="" style="width: 100%">
+                    <video src="./Home/bear//detail/nat-geo.mp4" style="width: 100%" preload="auto" autoplay="true" loop="loop"
+                        muted="muted" volume="0"></video>
+                    <img src="./Home/bear/detail/image-10.jpg" alt="" style="width: 100%">
+                </div>
+            </div>
+        </div>
+        <!-- p6 -->
+        <div class="section" id="c6">
+            <!-- 负一屏 -->
+            <div class="slide" id="onlyone">
+                <!-- 背景 -->
+                <div id="nav-background" style="width: 1338px; height: 757px; margin: 20px;">
+                    <!-- 第一个盒子 -->
+                    <div id="nav-left">
+                        <img src="./icon/hellomonday-logo@2.png" width="184" height="24" alt="" id="nav-logo">
+                        <a id="nav-address" href="">hello@hellomonday.com</a>
+                    </div>
+                    <!-- 第二个盒子 -->
+                    <div id="nav-right">
+                        <!-- 导航语 -->
+                        <div id="nav-nav">Navigation <span style="display: inline-block;width: 45px;height: 1px;background-color: rgb(185, 191,
+                                187);vertical-align: middle"></span>
+                        </div>
+                        <!-- 导航部分 -->
+                        <ul id="nav-ul">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Awards</a></li>
+                            <li><a href="#">People</a></li>
+                            <li id="nav-special-li"><a href="#">Stories</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="viewBox6" class="slide active">
+                <img src="./Home/people/HM_Landing_page_witness-change_layer1.jpg" class="specialPic" id='img16'>
+                <img src="./Home/people/HM_Landing_page_witness-change_layer2.png" class="specialPic" id='img17'>
+                <img src="./Home/people/HM_Landing_page_witness-change_layer3.png" class="specialPic" id='img18'>
+            </div>
+            <div class="slide">
+                <div id="P1content">
+                    <div id="P6return">
+                        <div>
+                            <div id="SP16"
+                                style="width: 14px;height: 1px;background-color: black;transform: rotate(-35deg);transition: all 0.5s">
+                            </div>
+                            <div id="SP26"
+                                style="width: 14px;height: 1px;background-color: black;margin-top:8px;transform: rotate(35deg);transition: all 0.5s">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding: 40px;display: flex;flex-direction: row;">
+                        <div style="display: flex;flex-direction: column;margin-top: 60px;">
+                            <span style="color: white;font-size:14px;font-weight: 900 ">Client</span>
+                            <span style="color: white;font-size: 14px;color:rgb(72, 63, 57);font-weight: 800">National Geographic</span>
+                        </div>
+                        <div style="margin-left: 100px;">
+                            <div style="display: flex;flex-direction: column;">
+                                <span style="color: aliceblue;font-size: 14px;font-weight: 700">Case -------</span>
+                                <span style="color: aliceblue;margin-top: 60px;font-size: 30px;font-weight: 900">National
+                                    Geographic</span>
+                                <span style="color: aliceblue;font-size: 30px;font-weight: 900;color:rgb(232, 185, 2) ">A Bear's-Eye
+                                    View of Yellowstone</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="font-size:33px;color:rgb(72, 63, 57);width: 1000px;padding: 40px">
+                        Follow the journeys of 4 bears navigating the heart of Yellowstone, as seen from the bears’ own point of view.
+                        This
+                        groundbreaking research that attaches cameras to bears gives us a lens into the never before seen lives of one
+                        of the
+                        animal kingdom’s most fearsome beasts.
+                    </div>
+                    <div style="display: flex;flex-direction: row;padding: 40px;justify-content: space-between">
+                        <div style="display: flex;flex-direction: column">
+                            <h4 style="color: white">The story</h4>
+                            <span style="display: inline-block;width:350px;color: white;font-size: 14px;">Ever wonder what it would be
+                                like to be a bear living in the wild – foraging to bulk up for the winter months, shaking
+                                off after a dip in a cool stream, hunting and being hunted, being spied on by curious tourists, and
+                                seeing some of the
+                                best views not accessible by humans? For the first time ever, National Geographic has those
+                                answers.</span>
+                            <span style="display: inline-block;width:350px;color: white;font-size: 14px;margin-top: 20px;">Following two
+                                grizzlies and two black bears equipped with special camera collars in Yellowstone National Park,
+                                researchers and Nat Geo readers are getting an unprecedented view into the life of a bear – from the
+                                bear’s eye-view. We
+                                see the remarkable journeys of these 4 bears as they cover great distances, encounter predators, their
+                                own kind, and
+                                even people. We discover what they eat and how they use the beautiful and expansive landscape of
+                                Yellowstone.
+                            </span>
+                        </div>
+                        <div style="width:350px;color: white;font-size: 14px;margin-top: 20px;">Working with National Geographic’s team
+                            of editors, journalists, producers, and researchers, we’ve gathered this
+                            incredible footage into an engaging online narrative focused on the distinct paths that each bear roamed.
+                            Utilizing the
+                            geo-coordinate data captured with every 20-seconds of footage, we’re able to pinpoint the bears to the exact
+                            geography
+                            of Yellowstone. Combined with expert analysis from researchers Kerry Gunther and Nate Bowers, delivered as
+                            intermittent
+                            audio captions, we gain a deeper understanding of the bears’ activity as uncovered by the POV footage and
+                            their unique
+                            characteristics. And, of course, Hello Monday couldn’t resist adding the extra hand-touch with watercolor
+                            illustrations
+                            and pencil-drawn portraits depicting the beautiful, mysterious life of each bear.</div>
+                        <div style="margin-top: 20px;color:white">
+                            <h4>Project</h4>
+                            <span
+                                style="display:inline-block;width: 300px;font-size: 14px;padding-bottom: 20px;border-bottom: 1px solid #ccc;margin-bottom: 10px">Digital
+                                feature for Nat Geo's May 2016 issue</span>
+                            <h4>Deliverables</h4>
+                            <span
+                                style="display:inline-block;width: 300px;font-size: 14px;padding-bottom: 20px;border-bottom: 1px solid #ccc;margin-bottom: 10px">Concept,
+                                Design, UX Design, Development, Illustration & Video Editing</span>
+                            <h4>Awards</h4>
+                            <span
+                                style="display:inline-block;width: 300px;font-size: 14px;padding-bottom: 20px;border-bottom: 1px solid #ccc;margin-bottom: 10px">Awwwards
+                                SOTD
+                                Awwwards SOTM
+                                FWA FOTD</span>
+                        </div>
+                
+                    </div>
+                    <div style="padding: 40px;color:white">
+                        <div style="font-size: 14px;font-weight: 900;">Visit site</div>
+                        <div style="font-size: 14px;color:rgb(231, 184, 1);font-weight: 900">
+                            www.nationalgeographic.com/yellowstone-bears</div>
+                    </div>
+                    <img src="./Home/bear/detail/image-1.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-2.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-3.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-4.gif" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-5.gif" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-6.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-7.gif" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-8.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-9.jpg" alt="" style="width: 100%">
+                    <video src="./Home/bear//detail/nat-geo.mp4" style="width: 100%" preload="auto" autoplay="true" loop="loop"
+                        muted="muted" volume="0"></video>
+                    <img src="./Home/bear/detail/image-10.jpg" alt="" style="width: 100%">
+                </div>
+            </div>
+        </div>
+        <!-- p7 -->
+        <div class="section" id="c7">
+            <!-- 负一屏 -->
+            <div class="slide" id="onlyone">
+                <!-- 背景 -->
+                <div id="nav-background" style="width: 1338px; height: 757px; margin: 20px;">
+                    <!-- 第一个盒子 -->
+                    <div id="nav-left">
+                        <img src="./icon/hellomonday-logo@2.png" width="184" height="24" alt="" id="nav-logo">
+                        <a id="nav-address" href="">hello@hellomonday.com</a>
+                    </div>
+                    <!-- 第二个盒子 -->
+                    <div id="nav-right">
+                        <!-- 导航语 -->
+                        <div id="nav-nav">Navigation <span style="display: inline-block;width: 45px;height: 1px;background-color: rgb(185, 191,
+                                187);vertical-align: middle"></span>
+                        </div>
+                        <!-- 导航部分 -->
+                        <ul id="nav-ul">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Awards</a></li>
+                            <li><a href="#">People</a></li>
+                            <li id="nav-special-li"><a href="#">Stories</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="viewBox7" class="slide active">
+                <img src="./Home/fans/HM_Landing_page_espn_layer1.jpg" class="specialPic" id='img19'>
+                <img src="./Home/fans/HM_Landing_page_espn_layer5.png" class="specialPic" id='img20'>
+                <img src="./Home/fans/HM_Landing_page_espn_layer4.png" class="specialPic" id='img21'>
+            </div>
+            <div class="slide">
+                <div id="P1content">
+                    <div id="P7return">
+                        <div>
+                            <div id="SP17"
+                                style="width: 14px;height: 1px;background-color: black;transform: rotate(-35deg);transition: all 0.5s">
+                            </div>
+                            <div id="SP27"
+                                style="width: 14px;height: 1px;background-color: black;margin-top:8px;transform: rotate(35deg);transition: all 0.5s">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding: 40px;display: flex;flex-direction: row;">
+                        <div style="display: flex;flex-direction: column;margin-top: 60px;">
+                            <span style="color: white;font-size:14px;font-weight: 900 ">Client</span>
+                            <span style="color: white;font-size: 14px;color:rgb(72, 63, 57);font-weight: 800">National Geographic</span>
+                        </div>
+                        <div style="margin-left: 100px;">
+                            <div style="display: flex;flex-direction: column;">
+                                <span style="color: aliceblue;font-size: 14px;font-weight: 700">Case -------</span>
+                                <span style="color: aliceblue;margin-top: 60px;font-size: 30px;font-weight: 900">National
+                                    Geographic</span>
+                                <span style="color: aliceblue;font-size: 30px;font-weight: 900;color:rgb(232, 185, 2) ">A Bear's-Eye
+                                    View of Yellowstone</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="font-size:33px;color:rgb(72, 63, 57);width: 1000px;padding: 40px">
+                        Follow the journeys of 4 bears navigating the heart of Yellowstone, as seen from the bears’ own point of view.
+                        This
+                        groundbreaking research that attaches cameras to bears gives us a lens into the never before seen lives of one
+                        of the
+                        animal kingdom’s most fearsome beasts.
+                    </div>
+                    <div style="display: flex;flex-direction: row;padding: 40px;justify-content: space-between">
+                        <div style="display: flex;flex-direction: column">
+                            <h4 style="color: white">The story</h4>
+                            <span style="display: inline-block;width:350px;color: white;font-size: 14px;">Ever wonder what it would be
+                                like to be a bear living in the wild – foraging to bulk up for the winter months, shaking
+                                off after a dip in a cool stream, hunting and being hunted, being spied on by curious tourists, and
+                                seeing some of the
+                                best views not accessible by humans? For the first time ever, National Geographic has those
+                                answers.</span>
+                            <span style="display: inline-block;width:350px;color: white;font-size: 14px;margin-top: 20px;">Following two
+                                grizzlies and two black bears equipped with special camera collars in Yellowstone National Park,
+                                researchers and Nat Geo readers are getting an unprecedented view into the life of a bear – from the
+                                bear’s eye-view. We
+                                see the remarkable journeys of these 4 bears as they cover great distances, encounter predators, their
+                                own kind, and
+                                even people. We discover what they eat and how they use the beautiful and expansive landscape of
+                                Yellowstone.
+                            </span>
+                        </div>
+                        <div style="width:350px;color: white;font-size: 14px;margin-top: 20px;">Working with National Geographic’s team
+                            of editors, journalists, producers, and researchers, we’ve gathered this
+                            incredible footage into an engaging online narrative focused on the distinct paths that each bear roamed.
+                            Utilizing the
+                            geo-coordinate data captured with every 20-seconds of footage, we’re able to pinpoint the bears to the exact
+                            geography
+                            of Yellowstone. Combined with expert analysis from researchers Kerry Gunther and Nate Bowers, delivered as
+                            intermittent
+                            audio captions, we gain a deeper understanding of the bears’ activity as uncovered by the POV footage and
+                            their unique
+                            characteristics. And, of course, Hello Monday couldn’t resist adding the extra hand-touch with watercolor
+                            illustrations
+                            and pencil-drawn portraits depicting the beautiful, mysterious life of each bear.</div>
+                        <div style="margin-top: 20px;color:white">
+                            <h4>Project</h4>
+                            <span
+                                style="display:inline-block;width: 300px;font-size: 14px;padding-bottom: 20px;border-bottom: 1px solid #ccc;margin-bottom: 10px">Digital
+                                feature for Nat Geo's May 2016 issue</span>
+                            <h4>Deliverables</h4>
+                            <span
+                                style="display:inline-block;width: 300px;font-size: 14px;padding-bottom: 20px;border-bottom: 1px solid #ccc;margin-bottom: 10px">Concept,
+                                Design, UX Design, Development, Illustration & Video Editing</span>
+                            <h4>Awards</h4>
+                            <span
+                                style="display:inline-block;width: 300px;font-size: 14px;padding-bottom: 20px;border-bottom: 1px solid #ccc;margin-bottom: 10px">Awwwards
+                                SOTD
+                                Awwwards SOTM
+                                FWA FOTD</span>
+                        </div>
+                
+                    </div>
+                    <div style="padding: 40px;color:white">
+                        <div style="font-size: 14px;font-weight: 900;">Visit site</div>
+                        <div style="font-size: 14px;color:rgb(231, 184, 1);font-weight: 900">
+                            www.nationalgeographic.com/yellowstone-bears</div>
+                    </div>
+                    <img src="./Home/bear/detail/image-1.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-2.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-3.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-4.gif" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-5.gif" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-6.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-7.gif" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-8.jpg" alt="" style="width: 100%">
+                    <img src="./Home/bear/detail/image-9.jpg" alt="" style="width: 100%">
+                    <video src="./Home/bear//detail/nat-geo.mp4" style="width: 100%" preload="auto" autoplay="true" loop="loop"
+                        muted="muted" volume="0"></video>
+                    <img src="./Home/bear/detail/image-10.jpg" alt="" style="width: 100%">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/nomalize.js"></script>
+
+</html>
